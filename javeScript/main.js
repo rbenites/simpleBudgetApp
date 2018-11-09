@@ -1,3 +1,7 @@
+/*jshint esversion: 6 */
+
+$(document).ready(function () {   
+
 /*******BUDGET CONTROLLER*******/
 var budgetController=(function(){
 //budget logic
@@ -12,7 +16,7 @@ var UIController=(function(){
 
 /*****GLOBAL APP CONTROLLER******/
 //This controller access the other controllers to run the app
-var controller =(function(budgerCtrl,UICtrl){
+const controller =(function(budgerCtrl,UICtrl){
 $('.add__btn').on('click',function(){
     console.log('button pressed');
 });
@@ -21,3 +25,5 @@ $('.add__btn').on('click',function(){
 
 
 })(budgetController,UIController);
+
+});
